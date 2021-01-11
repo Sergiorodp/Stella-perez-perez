@@ -9,7 +9,7 @@ export default css`
     width: 100vw;
     background: ${colors.primary};
     display: grid;
-    height: 4rem;
+    height: 3.5rem;
     place-content: center;
 }
 
@@ -106,21 +106,34 @@ export default css`
     .opciones{
         height: 100vh;
         width: 105vw;
-        margin: 46px 0 0 0;
+        margin: 2.5em 0 0 0;
         position:fixed;
         background-color: rgba(0 ,0 ,0 ,0);
-        overflow: scroll;
+
         transform: translateX(100%);
         transition: transform .6s ease-in-out;
     }
 
     .listItems{
+        align-items: initial;
+        justify-content:right;
         background:${colors.primary};
         margin: 0 0 0 7em;
-        width: 100vw;
+        width: 100%;
         transform: translateX(100%);
+        flex-direction: column;
         transition: transform .6s ease-in-out;
     }
+
+
+    .listItems li{
+
+        border-bottom: 1px solid ${colors.white};
+        margin: 0 5px;
+        padding: 15px 10px;
+        
+    }
+
 
     .listItems-open{
         transform: translateX(0%);
@@ -129,10 +142,6 @@ export default css`
     .opciones-open{
         background-color: rgba(0 ,0 ,0 ,0);
         transform: translateX(-10%);
-    }
-
-    .listItems{
-        flex-direction: column;
     }
 
 }

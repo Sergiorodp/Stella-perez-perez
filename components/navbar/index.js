@@ -42,7 +42,7 @@ export default function NavBar({bodyRef}){
                         <li> <Link href='/'> Inicio </Link></li>    
                         <li><Link href='/api/hello'>Sobre mí</Link></li>
                         <li><Link href='https://vercel.com/dashboard/integrations'>Servicios</Link></li>
-                        <li><Link href='https://vercel.com/dashboard/integrations'>Contacto</Link></li>
+                        <li><Link href='/contacto'>Contacto</Link></li>
                     </ul>
                 </div>
 

@@ -22,13 +22,13 @@ export default function Home() {
             <div className = {styles.centerMainPage}>
               <h3>Contadora Publica</h3>
               <p>Asesoría nivel contable, tributario, laboral y financiero</p>
-              <Button url = {'/api/hello'} nombre = {'Contactame'}/>
+              <Button url = {'/contacto'} nombre = {'Contactame'}/>
               {/* <Loader/> */}
             </div>
           </div>
 
           <SobreMi/>
-          
+
         </main>
 
         <footer className={styles.footer}>

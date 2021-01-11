@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css'
-import { colors } from '../../components/appLayout/index'
+import { colors, breackPoint } from '../../components/appLayout/index'
 
 export default css`
 
@@ -30,6 +30,27 @@ export default css`
 .info-container p{
     font-size:1.5em;
     padding: 10px 0;
+}
+
+@media (max-width: ${breackPoint.mobile}){
+
+    .secction-container{
+        width:90vw ;
+        grid-template-columns: 1fr;
+    }
+
+    .info-container{
+        text-aling:center;   
+    }
+
+    .info-container h3{
+        font-size: 40px;
+    }
+
+    .info-container p{
+        font-size: 15px;
+    }
+
 }
 
 `
