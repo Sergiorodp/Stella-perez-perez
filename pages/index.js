@@ -4,12 +4,13 @@ import styles from '../styles/Home.module.css'
 // Componentes
 import Nav from '../components/navbar/index'
 import Button from '../components/boton/index'
+import SobreMi from '../sections/sobreMi/index'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Stella Perez | Contadora</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className = {styles.pageContainer}>
@@ -25,6 +26,9 @@ export default function Home() {
               {/* <Loader/> */}
             </div>
           </div>
+
+          <SobreMi/>
+          
         </main>
 
         <footer className={styles.footer}>
