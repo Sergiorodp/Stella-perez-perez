@@ -128,10 +128,17 @@ export default css`
 
     .listItems li{
 
+        width: 100%;
+        /* background:red; */
         border-bottom: 1px solid ${colors.white};
         margin: 0 5px;
         padding: 15px 10px;
         
+    }
+
+    .listItems li a div{
+        /* background:red; */
+        width:100%;
     }
 
 

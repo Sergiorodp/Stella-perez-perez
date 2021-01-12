@@ -39,10 +39,19 @@ export default function NavBar({bodyRef}){
                 
                 <div className = "opciones" ref = {itemsContainer} onClick = {show}>
                     <ul className = "listItems" ref = {listItems}>
-                        <li> <Link href='/'> Inicio </Link></li>    
-                        <li><Link href='/api/hello'>Sobre mí</Link></li>
-                        <li><Link href='https://vercel.com/dashboard/integrations'>Servicios</Link></li>
-                        <li><Link href='/contacto'>Contacto</Link></li>
+                        <li> <Link href='/'> 
+                        <a tittle = "Home Page"><div>Inicio</div></a>
+                        </Link></li>    
+                        <li><Link href='/api/hello'>
+                            <a tittle = "About me"><div>Sobre mí</div></a>
+                            </Link></li>
+                        <li>
+                            <Link href='/api/hello'> 
+                                <a title = "Servicios"><div>Servicios</div></a>
+                            </Link>
+                        </li>
+                        <li><Link href='/contacto'> 
+                        <a title = "Contacto"><div>Contacto</div></a></Link></li>
                     </ul>
                 </div>
 
