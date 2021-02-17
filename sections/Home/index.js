@@ -30,13 +30,13 @@ export default function MainHome(){
                         <div className = {Styles.buttonContainer}>
                             <Button 
                             nombre = {'Contacto'} 
-                            url = '/' 
+                            url = {'/'} 
                             background = {colors.black}
                             color = {colors.primary}
                             height = {"8px"}/>
                             <Button
                             nombre = {'Empezemos'}
-                            url = {'/'}
+                            url = {'#sobreMi'}
                             background = {colors.grey}
                             height = {"8px"}
                             />
@@ -46,9 +46,7 @@ export default function MainHome(){
                 </div>
                 <div className = {Styles.imageContainer}>
                     <div className = {Styles.cuadroFigure}>
-                        <img src = "images/flores y mac.png"
-                        width="650" 
-                        height="650"></img>
+                        <img className = {Styles.foto}  src = "images/flores y mac.png"/>
                     </div>
                 </div>
             </div>
