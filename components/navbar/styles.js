@@ -16,8 +16,8 @@ export default css`
 }
 
 .blur{
-
-    backdrop-filter: saturate(160%) blur(5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: saturate(160%) blur(10px);
     border-bottom: 1px solid rgba(0,0,0,.1);
 
 }
