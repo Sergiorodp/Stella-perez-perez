@@ -1,9 +1,7 @@
 import Link from 'next/link'
+import {colors, breackPoint} from '../appLayout/index'
 
-// Styles
-import jsxstyle from './style'
-
-export default function Button({url , nombre}){
+export default function Button({ url , nombre, background, color }){
     return(
         <>
             <Link href = {`${url}`}>
@@ -11,7 +9,39 @@ export default function Button({url , nombre}){
                     <div className = "buttonMain"> {nombre} </div>
                 </a>
             </Link>
-            <style jsx>{jsxstyle}
+            <style jsx>{`
+                
+            /*.hov{
+                margin-top: 110px;
+            }*/
+
+            .buttonMain{
+                /* background: red; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /*border: 2px solid ${colors.white};*/
+                background: ${background};
+                border-radius: 10px;
+                padding: 8px 24px;
+                font-size: 1.2rem;
+                font-weight: 500;
+                color:${color};
+                transition: 0.2s ease-in-out;
+            }
+
+            .buttonMain:hover,
+            .buttonMain:focus,
+            .buttonMain:active{
+                /*border: 2px solid ${colors.primary};*/
+                background: ${colors.primary};
+                padding: 8px 24px;
+                
+                color: ${colors.secondary};
+            }
+
+                
+                `}
             </style>
         </>
     )

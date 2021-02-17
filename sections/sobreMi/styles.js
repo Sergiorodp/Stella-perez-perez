@@ -12,7 +12,7 @@ export default css`
 
 .secction-container{
     padding: 30px;
-    width: 70vw;
+    width: 87vw;
     display:grid;
     grid-template-columns: 1.2fr 0.8fr;
 }

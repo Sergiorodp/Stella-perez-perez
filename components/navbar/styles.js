@@ -4,19 +4,21 @@ import { colors, breackPoint } from '../appLayout/index'
 export default css`
 
 .mainNavContainer{
-    z-index: 1100;
+    z-index: 100;
     position: fixed;
     width: 100vw;
-    background: ${colors.primary};
+    /* background: ${colors.primary}; */
     display: grid;
     height: 3.5rem;
     place-content: center;
+    backdrop-filter: saturate(145%) blur(5px);
+    border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .navItemsContainer{
-    color: ${colors.white};
+    color: ${colors.black};
     max-width: 1600px;
-    width: 70vw;
+    width: 80vw;
     /* margin: 0 20%; */
     display: grid;
     /* background: red; */
@@ -35,26 +37,30 @@ export default css`
   overflow: hidden;
 }
 .opciones{
-    grid-column: 3/6;
+    grid-column: 4/6;
     display: flex;
-    justify-content: center;
+    /* justify-content: flex-end; */
+    /* justify-content:space-between; */
     /* background: red; */
 }
 
 .listItems{
     display: flex;
+    width:100%;
     list-style: none;
     align-items: center;
-    justify-content: center;
+    justify-content:space-between;
+    /* background:blue; */
 }
 
 .listItems li{
     font-weight: 500;
-    margin: 0 20px;
 }
 
 .listItems li :hover{
-    color: ${colors.secondary};
+    box-sizing:content-box;
+    border-radius:2px;
+    border-bottom: 2px solid ${colors.black};
     /* color: #F2811D; */
 }
 
