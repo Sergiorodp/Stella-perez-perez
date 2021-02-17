@@ -4,32 +4,60 @@ import { colors, breackPoint } from '../../components/appLayout/index'
 export default css`
 
 .main-me-container{
-    background: ${colors.secondary};
+    /* background: ${colors.secondary}; */
     width:100vw;
+    height:90vh;
     display: grid;
     place-items: center;
+    /* background:blue; */
 }
 
 .secction-container{
     padding: 30px;
-    width: 87vw;
+    width: 100%;
     display:grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    /* background:blue; */
+    /* grid-template-columns: 1.2fr 0.8fr; */
+    grid-template-columns:50% 50%;
 }
 
 .info-container{
-    color: ${colors.primary};
-    grid: 1/2
+    color: ${colors.black};
+    width:90%;
+    grid: 2/3;
+    /* background:red; */
 }
 
 .info-container h3{
     font-size:3em;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .info-container p{
     font-size:1.5em;
     padding: 10px 0;
+}
+
+.foto-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.background-img{
+    width:400px;
+    height:400px;
+    border-radius:20px;
+    background:${colors.secondary};
+}
+
+.imagen-foto{
+    position:relative;
+    bottom:20px;
+    left:20px;
+    border-radius: 20px;
+    /* border: 20px solid ${colors.secondary} */
+
 }
 
 @media (max-width: ${breackPoint.mobile}){

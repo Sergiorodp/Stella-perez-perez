@@ -5,6 +5,14 @@ export default function SobreMi(){
         <>
         <div className = "main-me-container">
             <section className = "secction-container">
+                <div className = "foto-container">
+                    <div className = "background-img">
+                        <img className = "imagen-foto" src = "images/christin-hume-mfB1B1s4sMc-unsplash.jpg"
+                        width="400" 
+                        height="400" ></img>
+                    </div>
+
+                </div>
                 <div className = "info-container">
                     <h3>Sobre Mi</h3>
                     <p> Mi nombre es Maria Stella Perez, me gusta ver muchas series de netflix y tambien comer, sin embargo no me gusta que mi hijo me salude porque me da pena que el este viviendo conmigo, en otras palabras me da pena que sea mi hijo. Soy contadora publica de la cruzada cristiana, pero pues me gustaria ser de su presencia, si alguien de su presencia ve esto porfa contrateme. </p>
