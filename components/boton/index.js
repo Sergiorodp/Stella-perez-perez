@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import {colors, breackPoint} from '../appLayout/index'
 
-export default function Button({ url , nombre, background, color }){
+export default function Button({ url , nombre, background, color, height }){
     return(
         <>
             <Link href = {`${url}`}>
@@ -23,7 +23,7 @@ export default function Button({ url , nombre, background, color }){
                 /*border: 2px solid ${colors.white};*/
                 background: ${background};
                 border-radius: 10px;
-                padding: 8px 24px;
+                padding: ${height} 24px;
                 font-size: 1.2rem;
                 font-weight: 500;
                 color:${color};
@@ -34,8 +34,8 @@ export default function Button({ url , nombre, background, color }){
             .buttonMain:focus,
             .buttonMain:active{
                 /*border: 2px solid ${colors.primary};*/
-                background: ${colors.primary};
-                padding: 8px 24px;
+                background: ${colors.green};
+                padding: ${height} 24px;
                 
                 color: ${colors.secondary};
             }

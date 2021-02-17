@@ -3,7 +3,7 @@ import styles from './styles'
 export default function SobreMi(){
     return(
         <>
-        <div className = "main-me-container">
+        <div id = "sobreMi" className = "main-me-container">
             <section className = "secction-container">
                 <div className = "foto-container">
                     <div className = "background-img">

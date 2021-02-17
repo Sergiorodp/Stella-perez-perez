@@ -2,11 +2,30 @@
 import styles from './styles'
 import Link from 'next/link'
 import { createRef } from 'react'
+import Button from "../../components/boton";
+import { colors } from  '../../components/appLayout/index'
 
 const lineUp = createRef()
 const LineDown = createRef()
 const itemsContainer = createRef()
 const listItems = createRef()
+const back = createRef()
+
+export function Blur({inScreen}){
+    if(inScreen){
+        try{
+            back.current.classList.remove("blur")
+        }catch{
+            console.log('nonblur')
+        }  
+    }else{
+        try{
+            back.current.classList.add("blur")
+        }catch{
+            console.log('nonblur')
+        }
+    }
+}
 
 export default function NavBar({bodyRef}){
     
@@ -33,18 +52,26 @@ export default function NavBar({bodyRef}){
 
     return(
         <>
-        <div className= "mainNavContainer">
+        <div className= "mainNavContainer" ref = {back}>
             <div className= "navItemsContainer">
                 <h2>Stella Perez</h2>
+                <div className = "button-contact-nav">
+                <Button
+                    nombre = {'Contacto'} 
+                    url = '/' 
+                    background = {colors.black}
+                    color = {colors.primary}
+                    height = {"3px"}/>
+                </div>
                 
                 <div className = "opciones" ref = {itemsContainer} onClick = {show}>
                     <ul className = "listItems" ref = {listItems}>
-                        <li> <Link href='/'> 
-                        <a tittle = "Home Page"><div>Inicio</div></a>
-                        </Link></li>    
-                        <li><Link href='/api/hello'>
-                            <a tittle = "About me"><div>Sobre mí</div></a>
-                            </Link></li>
+                        <li> 
+                        <a href='#Home' tittle = "Home Page"><div>Inicio</div></a>
+                        </li>    
+                        <li>
+                            <a href = "#sobreMi" tittle = "About me"><div>Sobre mí</div></a>
+                            </li>
                         <li>
                             <Link href='/api/hello'> 
                                 <a title = "Servicios"><div>Servicios</div></a>

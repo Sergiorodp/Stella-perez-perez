@@ -9,7 +9,7 @@ export default css`
     height:90vh;
     display: grid;
     place-items: center;
-    /* background:blue; */
+    background:#fafafa;
 }
 
 .secction-container{
@@ -23,7 +23,7 @@ export default css`
 
 .info-container{
     color: ${colors.black};
-    width:90%;
+    width:92%;
     grid: 2/3;
     /* background:red; */
 }

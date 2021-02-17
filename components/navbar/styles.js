@@ -11,8 +11,15 @@ export default css`
     display: grid;
     height: 3.5rem;
     place-content: center;
-    backdrop-filter: saturate(145%) blur(5px);
+    transition: .2s ease-in-out;
+   
+}
+
+.blur{
+
+    backdrop-filter: saturate(160%) blur(5px);
     border-bottom: 1px solid rgba(0,0,0,.1);
+
 }
 
 .navItemsContainer{
@@ -22,7 +29,7 @@ export default css`
     /* margin: 0 20%; */
     display: grid;
     /* background: red; */
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(3,1fr);
 }
 
 .navItemsContainer p{
@@ -37,12 +44,18 @@ export default css`
   overflow: hidden;
 }
 .opciones{
-    grid-column: 4/6;
+    grid-column: 3/4;
     display: flex;
     /* justify-content: flex-end; */
     /* justify-content:space-between; */
     /* background: red; */
 }
+
+.button-contact-nav{
+    grid-column: 2/3;
+    width:40%;
+}
+
 
 .listItems{
     display: flex;
@@ -55,13 +68,11 @@ export default css`
 
 .listItems li{
     font-weight: 500;
+    transition: 0.2s ease-in-out;
 }
 
 .listItems li :hover{
-    box-sizing:content-box;
-    border-radius:2px;
-    border-bottom: 2px solid ${colors.black};
-    /* color: #F2811D; */
+    color: ${colors.green};
 }
 
 .lines-nav-container{

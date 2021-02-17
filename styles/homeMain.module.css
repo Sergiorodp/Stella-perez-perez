@@ -39,12 +39,21 @@
 }
 
 .cuadroFigure{
-    position: absolute;
     height: 98vh;
     width: 42vw;
     right: 5%;
     border-radius: 20px;
-    background: #fbd17f;
+    /* background: #fbd17f; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cuadroFigure img{
+    border-radius: 20px;
+    position: relative;
+    /* right: 20px; */
+    /* mix-blend-mode: multiply; */
 }
 
 .buttonContainer{
